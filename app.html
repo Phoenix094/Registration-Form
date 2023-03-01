@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Form</title>
+    <link rel="stylesheet" href="./Libraries/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./Libraries/jquery-3.6.3.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Alerts Display -->
+
+    <div class="alert alert-primary text-center position-fixed w-100 d-none z-3" role="alert" id="signIn">
+        A simple primary alert—check it out!
+    </div>
+    <div class="alert bg-alert text-center position-fixed w-100 d-none z-3" role="alert" id="warn">
+        A simple danger alert—check it out!
+    </div>
+    <!--Alerts   -->
+
+    <!-- Navbar Started -->
+
+    <header>
+        <div class="nav-customx pt-5">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <center>
+                <div class="bg-custom w-50 rounded-5 text-light p-3">
+                    <h1 class="fs">
+                        Registration form
+                    </h1>
+                </div>
+            </center>
+        </div>
+    </header>
+
+    <!-- Navbar Ended -->
+
+
+    <main>
+        <div class="container">
+
+            <div
+                class="bg-custom pt-4 container offset-lg-2 col-lg-8 mt-4 border border-2 border-dark-subtle shadow-lg rounded-3">
+                <form name="regForm" id="regForm">
+                    <div class="form-floating mb-3 mt-2">
+                        <input type="text" class="form-control" id="fullName" placeholder="Enter your Name">
+                        <label for="fullName">Full name</label>
+                        
+                    </div>
+                    <div class="form-floating mb-3 mt-2">
+                        <input type="text" class="form-control" id="emailId" placeholder="Enter your Email">
+                        <label for="emailId">Email</label>
+                    </div>
+                    <div class="form-floating mb-3 mt-2">
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter your password">
+                        <label for="pwd">Password</label>
+                    </div>
+                    <div class="form-floating mb-3 mt-2">
+                        <input type="password" class="form-control" id="confirmPwd" placeholder="Enter your password">
+                        <label for="confirmPwd">Confirm Password</label>
+                    </div>
+                    <div class="form-floating mb-3 mt-2 ">
+                        <label for="pwd" class="custom-label">+91</label>
+                        <input type="text" class="offset-1 form-control w-50" id="contactNumber"
+                            placeholder="Enter your contact number">
+                        <label for="contactNumber" class="offset-1 ">Contact Number</label>
+                    </div>
+                    <div class="form-floating mb-3 mt-2">
+                        <input type="text" class="form-control" id="address" placeholder="Enter your address">
+                        <label for="address">Address</label>
+                    </div>
+                    <div class="mt-2 mb-3 mx-3 d-flex">
+                        <label class="form-label text-light"> Select Gender</label>
+                        <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" >
+                        <label class="mx-2 btn btn-outline-light" for="male">Male</label>
+                        <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off">
+                        <label class="mx-2 btn btn-outline-light" for="female">Female</label>
+                        <input type="radio" class="btn-check" name="gender" id="other" autocomplete="off">
+                        <label class="mx-2 btn btn-outline-light" for="other">Other</label>
+
+                        <!-- Options for cities -->
+                        <div class="ms-5">
+                            <select class="form-select" aria-label="Default select example" >
+                                <option selected>Select City</option>
+                                <option value="nanded">Nanded</option>
+                                <option value="hydrabad">Hydrabad</option>
+                                <option value="pune">Pune</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="nagpur">Nagpur</option>
+                            </select>
+
+                        </div>
+
+
+                    </div>
+                    <div class="row mt-3 mb-4 p-3">
+                        <button type="button" class="btn-custom" id="submitButton">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <script src="./Libraries/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

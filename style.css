@@ -1,0 +1,47 @@
+body{
+    background: url("./images/Looping\ Gif\ of\ space\ -\ Imgur.gif");
+    background-size: cover;
+    margin: 0;
+}
+
+.error {
+    border-bottom: 5px;
+    border-left: 3px;
+    border-right: 3px;
+    border-top: 0px;
+    border-color: crimson;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.bg-alert{
+    background-color: crimson;
+    color: white;
+    font-weight: bolder;
+}
+
+.bg-custom {
+    background: linear-gradient(to top, #000428, #004e92);
+}
+
+.custom-label {
+    color: #fff;
+}
+
+.btn-custom {
+    background: linear-gradient(to top, #e52d27, #b31217);
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+    color: bisque;
+    font-size: large;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(to top, #00416a, #e4e5e6);
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+    color: rgb(17, 0, 0);
+    font-size: large;
+}
